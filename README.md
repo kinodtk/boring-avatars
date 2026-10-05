@@ -30,7 +30,7 @@ import Avatar from 'boring-avatars';
 | square  | boolean                                                      | `false`                                                   |
 | title   | boolean                                                      | `false`                                                   |
 | name    | string                                                       | `Clara Barton`                                            |
-| variant | oneOf: `marble`, `beam`, `pixel`,`sunset`, `ring`, `bauhaus` | `marble`                                                  |
+| variant | oneOf: `marble`, `beam`, `pixel`,`sunset`, `ring`, `bauhaus`, `mascot` | `marble`                                                  |
 | colors  | array                                                        | `['#92A1C6', '#146A7C', '#F0AB3D', '#C271B4', '#C20D90']` |
 
 
@@ -42,7 +42,9 @@ The `name` prop is used to generate the avatar. It can be the username, email or
 ```
 
 #### Variant
-The `variant` prop is used to change the theme of the avatar. The available variants are: `marble`, `beam`, `pixel`, `sunset`, `ring` and `bauhaus`.
+The `variant` prop is used to change the theme of the avatar. The available variants are: `marble`, `beam`, `pixel`, `sunset`, `ring`, `bauhaus` and `mascot`.
+
+`mascot` draws a round character with a face and one accessory. The head takes a color from `colors`, and the accessory uses that color's complement. It is always round, so `square` has no effect on it.
 
 ```jsx
 <Avatar name="Alice Paul" variant="beam"/>

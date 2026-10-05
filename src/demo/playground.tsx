@@ -75,7 +75,7 @@ interface AvatarWrapperProps {
   playgroundColors: string[];
   size: number;
   square: boolean;
-  variant: 'beam' | 'bauhaus' | 'ring' | 'sunset' | 'pixel' | 'marble';
+  variant: 'beam' | 'bauhaus' | 'ring' | 'sunset' | 'pixel' | 'marble' | 'mascot';
 }
 
 const AvatarWrapper = ({ name, playgroundColors, size, square, variant }: AvatarWrapperProps) => {
@@ -210,7 +210,7 @@ export const Playground = () => {
       .
       <Header>
         <SegmentGroup>
-          {(['beam', 'bauhaus', 'ring', 'sunset', 'pixel', 'marble'] as const).map(
+          {(['beam', 'bauhaus', 'ring', 'sunset', 'pixel', 'marble', 'mascot'] as const).map(
             (variantItem, i) => (
               <Segment
                 key={i}

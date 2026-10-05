@@ -4,6 +4,7 @@ import AvatarPixel from './components/avatar-pixel';
 import AvatarBeam from './components/avatar-beam';
 import AvatarSunset from './components/avatar-sunset';
 import AvatarMarble from './components/avatar-marble';
+import AvatarMascot from './components/avatar-mascot';
 import type { AvatarProps } from './components/types';
 
 const AVATAR_VARIANTS = {
@@ -13,6 +14,7 @@ const AVATAR_VARIANTS = {
   beam: AvatarBeam,
   sunset: AvatarSunset,
   marble: AvatarMarble,
+  mascot: AvatarMascot,
   geometric: AvatarBeam, // Deprecated, use 'beam'
   abstract: AvatarBauhaus, // Deprecated, use 'bauhaus'
 };
